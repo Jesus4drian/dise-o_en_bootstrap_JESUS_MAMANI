@@ -1,0 +1,63 @@
+.contenedor 
+{ 
+    padding: 5px; 
+    background-color: beige; 
+    display: grid; 
+    grid-template-columns: 5fr 1fr; 
+    grid-template-areas: "header header" 
+                         "nav nav" 
+                         "contenido ads" 
+                         "footer footer"; 
+} 
+.header 
+{ 
+     
+    grid-area: header; 
+} 
+.nav 
+{ 
+     
+    grid-area: nav; 
+} 
+.contenido 
+{ 
+     
+    grid-area: contenido; 
+} 
+.ads 
+{ 
+ 
+    grid-area: ads; 
+} 
+.footer 
+{ 
+   
+    grid-area: footer; 
+    
+}
+
+.video-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente los videos */
+    gap: 20px; /* Espacio entre los videos */
+    margin-top: 30px;
+}
+
+.video-container .ratio {
+    flex: 1; /* Los videos ocuparán el mismo ancho */
+    max-width: 45%; /* Ajusta el tamaño máximo de los videos */
+}
+
+
+
+
+.accordion-button.custom-gray {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+}
+
+.accordion-button.custom-gray:not(.collapsed) {
+    color: #464646; /* Cambia el color del texto cuando está expandido */
+    background-color: #76ad63; /* Fondo gris oscuro al expandir */
+}
+
